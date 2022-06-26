@@ -1,0 +1,67 @@
+[{
+		"id": 1,
+		"title": "工作空间",
+		"type": 0,
+		"icon": "layui-icon layui-icon-console",
+		"href": "",
+		"children": [{
+			"id": 10,
+			"title": "首页",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/console/index_home.html"
+		},{
+			"id": 11,
+			"title": "嗨优GBA测评维度",
+			"icon": "layui-icon layui-icon-read",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/single/haneotraits.html"
+		}]
+	},
+	{
+		"id": "project",
+		"title": "测评项目管理",
+		"icon": "layui-icon layui-icon-template-1",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 901,
+			"title": "项目列表",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/list.html"
+		},{
+			"id": 906,
+			"title": "收藏列表",
+			"icon": "layui-icon layui-icon-add",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/collection.html"
+		},{
+			"id": 905,
+			"title": "导入异常数据列表",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/uploaderror.html"
+		}]
+	},
+	{
+		"id": "business",
+		"title": "企业客户管理",
+		"icon": "layui-icon layui-icon-user",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 1202,
+			"title": "企业管理员列表",
+			"icon": "layui-icon layui-icon-add",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/business/company_user.html"
+		}]
+	}	
+]

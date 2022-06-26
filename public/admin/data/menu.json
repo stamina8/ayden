@@ -1,0 +1,225 @@
+[{
+		"id": 1,
+		"title": "工作空间",
+		"type": 0,
+		"icon": "layui-icon layui-icon-console",
+		"href": "",
+		"children": [{
+			"id": 10,
+			"title": "首页",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/console/index_home.html"
+		}, {
+			"id": 14,
+			"title": "百度一下",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "http://www.baidu.com"
+		}, {
+			"id": 15,
+			"title": "操作日志",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/console/admin_log.html"
+		}]
+	},
+
+	{
+		"id": "project",
+		"title": "测评项目管理",
+		"icon": "layui-icon layui-icon-template-1",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 901,
+			"title": "项目列表",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/list.html"
+		},{
+			"id": 907,
+			"title": "项目概览",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/view.html"
+		},{
+			"id": 906,
+			"title": "收藏列表",
+			"icon": "layui-icon layui-icon-add",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/collection.html"
+		},{
+			"id": 902,
+			"title": "创建新项目",
+			"icon": "layui-icon layui-icon-add",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/add.html"
+		},{
+			"id": 903,
+			"title": "硬性指标列表",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/request.html"
+		},{
+			"id": 904,
+			"title": "线下服务预约",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/offline.html"
+		},{
+			"id": 905,
+			"title": "导入异常数据列表",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/project/uploaderror.html"
+		}]
+	},
+	{
+		"id": "competence",
+		"title": "胜任力管理",
+		"icon": "layui-icon layui-icon-praise",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 1403,
+			"title": "胜任力模型",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/competence/firmmodel.html"
+		},{
+			"id": 1401,
+			"title": "胜任力定义",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/competence/competencys.html"
+		},{
+			"id": 1402,
+			"title": "胜任力面试问题",
+			"icon": "layui-icon layui-icon-add",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/competence/competence.html"
+		}]
+	},
+	{
+		"id": "business",
+		"title": "企业客户管理",
+		"icon": "layui-icon layui-icon-user",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 1201,
+			"title": "企业客户列表",
+			"icon": "layui-icon layui-icon-edit",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/business/company_list.html"
+		},{
+			"id": 1202,
+			"title": "企业管理员列表",
+			"icon": "layui-icon layui-icon-add",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/business/company_user.html"
+		}]
+	},	
+	{
+		"id": "user",
+		"title": "用户管理",
+		"icon": "layui-icon layui-icon-username",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 1101,
+			"title": "用户列表",
+			"icon": "layui-icon layui-icon-rmb",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/user/list.html"
+		}]
+	},
+	{
+		"id": "pay",
+		"title": "支付管理",
+		"icon": "layui-icon layui-icon-rmb",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 1001,
+			"title": "支付列表",
+			"icon": "layui-icon layui-icon-rmb",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/pay/list.html"
+		}]
+	},
+	{
+		"id": "member",
+		"title": "会员管理",
+		"icon": "layui-icon layui-icon-friends",
+		"type": 0,
+		"href": "",
+		"children": [{
+			"id": 1314,
+			"title": "企业会员",
+			"icon": "layui-icon layui-icon-rmb",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/vip/buy.html"
+		},
+		{
+			"id": 1318,
+			"title": "会员权益",
+			"icon": "layui-icon layui-icon-rmb",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/vip/rights.html"
+		}]
+	},
+	{
+		"id": "system",
+		"title": "系统管理",
+		"icon": "layui-icon layui-icon-set-fill",
+		"type": 0,
+		"href": "",
+		"children": [{
+				"id": 601,
+				"title": "用户管理",
+				"icon": "layui-icon layui-icon-face-smile",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/user.html"
+			},
+			{
+				"id": 602,
+				"title": "角色管理",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/role.html"
+			},
+
+			{
+				"id": 603,
+				"title": "权限管理",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/power.html"
+			}
+		]
+	}
+]

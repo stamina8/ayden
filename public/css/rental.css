@@ -1,0 +1,82 @@
+.background-container{
+    width:100%;
+    height:100%;
+}
+
+.computer{
+    width:100%;
+    height:100%;
+    display:block;
+    margin: auto;
+}
+
+
+.shadow{
+    position: absolute;
+    top:80px;
+    left: 40px;
+    right: 15px;
+    width:1200px;
+    height:400px;
+    background-color: black;
+    opacity:0.6;
+    margin:0;
+}
+
+.title{
+    position: absolute;
+    top:200px;
+    left:350px;
+    font-size: 100px;
+    color:white;
+}
+
+.container {
+height: 70px;
+width: 800px;
+position: absolute;
+top:400px;
+left:100px;
+right:100px;
+margin:auto;
+}
+
+.parent {
+position: relative;
+}
+
+.search {
+top:-25px;
+width: 800px;
+height: 40px;
+border-radius: 100px;
+outline: none;
+border: 1px solid #ccc;
+padding-left: 20px;
+position: absolute;
+}
+
+#btnsearch{
+    top:-25px;
+    height:40px;
+    width:100px;
+    position: absolute;
+    left:713px;
+    border-radius: 100px;
+}
+
+.device{
+    width: 90%;
+    height: 100%;
+    margin:5%;
+    text-align:justify
+}
+
+.text{
+    text-align: center;
+    margin:5% 
+}
+
+.moredevice{
+    text-align: center;
+}
