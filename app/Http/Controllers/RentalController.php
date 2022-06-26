@@ -20,7 +20,7 @@ class RentalController extends Controller
 
     public function rental($id)
     {
-        Rental::where('rental_id',$id)->update(['status'=>1]);
+        Rental::where('id',$id)->update(['status'=>1]);
         return redirect('rentalall');
     }
 
@@ -46,7 +46,7 @@ class RentalController extends Controller
                     break;
                 case 'major damage':
                     $deduct_money = 500;
-                    break;           
+                    break;
                 default:
                     $deduct_money = -50;
                     break;
@@ -61,7 +61,7 @@ class RentalController extends Controller
         // 预留黑名单操作
         $time = date_create();
         User::where('id',$request->user_id)->decrement('balance',$deduct_money);
-        Rental::where('rental_id',$id)->update(['remark'=>$remark,'status'=>2,'rent_time'=>$time]);
+        Rental::where('id',$id)->update(['remark'=>$remark,'status'=>2,'rent_time'=>$time]);
         return redirect('managerrental');
     }
 
@@ -80,7 +80,7 @@ class RentalController extends Controller
 
     public function manager_edit($id)
     {
-        $rental = Rental::where('rental_id',$id)->first();
+        $rental = Rental::where('id',$id)->first();
         return view('edit')->with(['rental'=>$rental]);
     }
 
@@ -88,7 +88,7 @@ class RentalController extends Controller
     {
         $data = $request->all();
         unset($data['_token']);
-        Rental::where('rental_id',$id)->update($data);
+        Rental::where('id',$id)->update($data);
         return redirect('managerrental');
     }
 
@@ -101,7 +101,7 @@ class RentalController extends Controller
     }
     public function manager_delete($id)
     {
-        Rental::where('rental_id',$id)->delete();
+        Rental::where('id',$id)->delete();
 
         return redirect('/managerrental');
     }

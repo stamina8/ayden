@@ -23,11 +23,11 @@
           归还
           @endif
         </td>
-      
+
 
         <td style="white-space:nowrap">
           @if($rental->status == 0)
-          <form method="post" action='{{url("manager_confirm/$rental->rental_id")}}'>
+          <form method="post" action='{{url("manager_confirm/$rental->id")}}'>
           @csrf
           <input type="hidden" name="insurance" value="{{ $rental->insurance }}">
            <input type="submit" class="btn btn-success"  value="Confirm">
@@ -35,10 +35,10 @@
           @endif
         </td>
         <td>
-            <a class="btn btn-primary" href='{{url("manager_edit/$rental->rental_id")}}'>Edit</a>
+            <a class="btn btn-primary" href='{{url("manager_edit/$rental->id")}}'>Edit</a>
         </td>
-        <td>      
-          <form method="post" action='{{url("manager_delete/$rental->rental_id")}}'>
+        <td>
+          <form method="post" action='{{url("manager_delete/$rental->id")}}'>
           @csrf
            <input type="submit" class="btn btn-danger"  value="Delete">
           </form>

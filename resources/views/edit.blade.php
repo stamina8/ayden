@@ -4,9 +4,9 @@
         <div class="background-container2">
 
             <div class="shadow-white"></div>
-          
+
             <!--form-->
-               <form method="POST" action='{{url("update/$rental->rental_id")}}' class="form-row">
+               <form method="POST" action='{{url("update/$rental->id")}}' class="form-row">
                @csrf
                <h1>Edit</h1>
                 <label for="fname">computer_id:</label>
