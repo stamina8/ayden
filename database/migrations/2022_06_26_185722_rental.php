@@ -28,6 +28,6 @@ class Rental extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rental');
+
     }
 }
