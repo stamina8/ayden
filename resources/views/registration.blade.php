@@ -11,6 +11,7 @@
             <h1><span class=heading style="color:dimgray" >Services</span></h1><br>
             <!--form-->
                <form method="POST" action="{{ route('register') }}" class="form-row">
+               @method('post')
                @csrf
                 <label for="fname">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Type your Name"><br>
