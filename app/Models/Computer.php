@@ -10,5 +10,5 @@ class Computer extends Model
     use HasFactory;
 
     protected $table = 'computer';
-
+public $timestamps = false;
 }
