@@ -24,8 +24,6 @@ class Users extends Migration
             $table->string('is_student');
             $table->string('is_blacklist');
             $table->string('remember_token');
-            $table->string('is_student');
-            $table->string('is_student');
         });
     }
 
