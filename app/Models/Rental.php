@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Rental extends Model
 {
     use HasFactory;
-
+    public $timestamps = false;
+    
     protected $table = 'rental';
 
     protected $fillable = [
