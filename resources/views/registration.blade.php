@@ -39,7 +39,7 @@
                 <label for="confirm password">Confirm Password:</label>
                 <input type="password" id="confirm_password" name="confirm_password" placeholder="Set password">
 
-                <label for="confirm password">Are you a student?</label>
+                <label>Are you a student?</label>
                 <select name="is_student" >
                   <option value="0">No</option>
                   <option value="1">Yes</option>
