@@ -21,7 +21,7 @@ class IndexController extends Controller
     {
        $response = Http::get('https://api.publicapis.org/entries')->json();
 
-        return view('index')->with(['product'=>$response]);
+        return view('home')->with(['product'=>$response]);
     }
     public function login(Request $request)
     {
