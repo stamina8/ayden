@@ -19,7 +19,7 @@
                   <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                   </span>
-                @enderror<!-- 
+                @enderror<!--
                 <label for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname" placeholder="Type your Last Name"><br>
      -->
@@ -28,18 +28,18 @@
 
                 <label for="Phone number">Phone number:</label>
                 <input type="text" id="pnumber" name="phone_number" placeholder="Type your Phone number"><br>
-    
+
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Set password"><br>
-   <!--              <input type="password" id="password" name="password" 
+   <!--              <input type="password" id="password" name="password"
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#])[A-Za-z\d@$!#]{5,10}$"
                 title="Notice:Password should be 5-10 characters in length contains at least 1 lowercase letter, 1 uppercase letter, 1 number and one of the following special characters such as !,@,#,$."
                 placeholder="Set password"><br> -->
-    
+
                 <label for="confirm password">Confirm Password:</label>
                 <input type="password" id="confirm_password" name="confirm_password" placeholder="Set password">
-
-                <label>Are you a student?</label>
+                   <br>
+                <label for="fname">Are you a student?</label>
                 <select name="is_student" >
                   <option value="0">No</option>
                   <option value="1">Yes</option>
@@ -57,7 +57,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                <!--  <label for="terms" style="font-size: 15px;">Agreed the terms and conditions: </label> -->
                <!--  <input type="checkbox" id="terms" name="terms"><br><br> -->
-    
+
                 <input type="submit" value="Register">
                 <a href="{{url('/')}}" style="color: inherit; text-decoration: none;">Cancel</a>
                     <span id='message'></span><br>
