@@ -7,9 +7,9 @@
     <link id="layuicss-layer" rel="stylesheet" href="layui/css/modules/layer/default/layer.css?v=3.5.1" media="all">
     <link id="layuicss-skincodecss" rel="stylesheet" href="layui/css/modules/code.css?v=2" media="all"></head>
         @if(Auth::user())
-        <h1>Login successful</h1>
+        <h1>Login successful ! Testing develop！！</h1>
         @endif
-        
+
 
                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table" lay-skin="line">
                 <tbody>
