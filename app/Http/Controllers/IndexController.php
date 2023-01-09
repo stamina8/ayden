@@ -63,7 +63,7 @@ class IndexController extends Controller
     {
         $request->validate([
             'name'         => 'required',
-            'email'        => 'required',
+            'email'        => 'required|email|unique:users',
             'phone_number' => 'required',
             'password'     => 'required',
             'confirm_password'     => 'required|confirmed',
