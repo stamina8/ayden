@@ -15,22 +15,29 @@
                @csrf
                 <label for="fname">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Type your Name"><br>
-                @error('name')
-                  <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                  </span>
-                @enderror<!--
+                   @if ($errors->has('name'))
+                       <span class="text-danger">{{ $errors->first('name') }}</span>
+                   @endif
+                   <!--
                 <label for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname" placeholder="Type your Last Name"><br>
      -->
                 <label for="Email">Email:</label>
                 <input type="text" id="Email" name="email" placeholder="Type Email address"><br>
-
+                   @if ($errors->has('email'))
+                       <span class="text-danger">{{ $errors->first('email') }}</span>
+                   @endif
                 <label for="Phone number">Phone number:</label>
                 <input type="text" id="pnumber" name="phone_number" placeholder="Type your Phone number"><br>
-
+                   @if ($errors->has('phone_number'))
+                       <span class="text-danger">{{ $errors->first('phone_number') }}</span>
+                   @endif
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Set password"><br>
+                <input type="password" id="password" name="password" placeholder="Set password">
+                   @if ($errors->has('password'))
+                       <span class="text-danger">{{ $errors->first('password') }}</span>
+                   @endif
+                   <br>
    <!--              <input type="password" id="password" name="password"
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#])[A-Za-z\d@$!#]{5,10}$"
                 title="Notice:Password should be 5-10 characters in length contains at least 1 lowercase letter, 1 uppercase letter, 1 number and one of the following special characters such as !,@,#,$."
@@ -38,6 +45,9 @@
 
                 <label for="confirm password">Confirm Password:</label>
                 <input type="password" id="confirm_password" name="confirm_password" placeholder="Set password">
+                   @if ($errors->has('confirm_password'))
+                       <span class="text-danger">{{ $errors->first('confirm_password') }}</span>
+                   @endif
                    <br>
                 <label for="fname">Are you a student?</label>
                 <select name="is_student" >
