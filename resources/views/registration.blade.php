@@ -13,7 +13,7 @@
                <form method="POST" action="{{ route('register') }}" class="form-row">
                @method('post')
                @csrf
-                <label for="fname">Name:</label>
+                <label for="fname">Name111:</label>
                 <input type="text" id="name" name="name" placeholder="Type your Name"><br>
                    @if ($errors->has('name'))
                        <span class="text-danger">{{ $errors->first('name') }}</span>
