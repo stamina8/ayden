@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-
-@stamina8
-stamina8
-/
-ayden
-Public
-forked from Ayden002/Portfolio-Ayden
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-ayden/resources/views/registration.blade.php
-@Ayden002
-Ayden002 new1
-Latest commit 8a9d397 20 minutes ago
-History
-2 contributors
-@Ayden002@stamina8
-82 lines (76 sloc)  4.27 KB
-
 @extends('layouts.nav')
 @section('content')
 
@@ -76,10 +45,11 @@ History
 
 
 {{--            new--}}
+
             <div class="form-group row">
                 <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
                 <div class="col-md-6">
-                    <input type="text" id="name" class="form-control" name="name" required autofocus>
+                    <input type="text" id="name" class="form-control" name="name"  autofocus>
                     @if ($errors->has('name'))
                         <span class="text-danger">{{ $errors->first('name') }}</span>
                     @endif
@@ -89,7 +59,7 @@ History
             <div class="form-group row">
                 <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
                 <div class="col-md-6">
-                    <input type="text" id="email_address" class="form-control" name="email" required autofocus>
+                    <input type="text" id="email_address" class="form-control" name="email"  autofocus>
                     @if ($errors->has('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
@@ -99,7 +69,7 @@ History
             <div class="form-group row">
                 <label for="email_address" class="col-md-4 col-form-label text-md-right">phone_number</label>
                 <div class="col-md-6">
-                    <input type="text" id="email_address" class="form-control" name="phone_number" required autofocus>
+                    <input type="text" id="email_address" class="form-control" name="phone_number"  autofocus>
                     @if ($errors->has('phone_number'))
                         <span class="text-danger">{{ $errors->first('phone_number') }}</span>
                     @endif
@@ -111,7 +81,7 @@ History
             <div class="form-group row">
                 <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
                 <div class="col-md-6">
-                    <input type="password" id="password" class="form-control" name="password" required>
+                    <input type="password" id="password" class="form-control" name="password" >
                     @if ($errors->has('password'))
                         <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
@@ -121,13 +91,14 @@ History
             <div class="form-group row">
                 <label for="password" class="col-md-4 col-form-label text-md-right">confirm_password</label>
                 <div class="col-md-6">
-                    <input type="password" id="password" class="form-control" name="confirm_password" required>
+                    <input type="password" id="password" class="form-control" name="confirm_password" >
                     @if ($errors->has('confirm_password'))
                         <span class="text-danger">{{ $errors->first('confirm_password') }}</span>
                     @endif
                 </div>
             </div>
-{{--            new end--}}
+
+            {{--            new end--}}
             <label for="fname">Are you a student?</label>
             <select name="is_student" >
                 <option value="0">No</option>
