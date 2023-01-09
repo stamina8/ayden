@@ -49,7 +49,7 @@
             <div class="form-group row">
                 <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
                 <div class="col-md-6">
-                    <input type="text" id="name" class="form-control" name="name"  autofocus>
+                    <input type="text" id="name" class="form-control" name="name" value="{{old('name')}}"  autofocus>
                     @if ($errors->has('name'))
                         <span class="text-danger">{{ $errors->first('name') }}</span>
                     @endif
