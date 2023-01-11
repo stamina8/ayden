@@ -1,4 +1,4 @@
-@extends('common.master')
+@extends('layouts.nav')
 
 @section('title', ('Register'))
 
