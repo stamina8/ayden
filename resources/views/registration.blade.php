@@ -3,7 +3,9 @@
 
     <link rel="stylesheet" href="{{asset('css/registration.css')}}">
     <title>Services</title>
-
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--background-->
     <div class="background-container2">
         <img class="com" src="img/p3.jpeg">
