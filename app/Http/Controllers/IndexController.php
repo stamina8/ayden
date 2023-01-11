@@ -56,7 +56,7 @@ class IndexController extends Controller
 
     public function registration()
     {
-        return view('registration'); 
+        return view('registration');
 //        return view('register');
     }
 
@@ -67,8 +67,8 @@ class IndexController extends Controller
             'phone_number' => 'required',
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
-            'confirm_password'     => 'required',
+            'password' => 'required|string|min:6',
+            'confirm_password'     => 'required|confirmed',
         ]);
 
         $contact = User::create([
