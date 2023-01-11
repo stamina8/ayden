@@ -63,10 +63,11 @@ class IndexController extends Controller
     public function register(Request $request)
     {
         $request->validate([
-            'name'         => 'required',
-            'email'        => 'required|email|unique:users',
+
             'phone_number' => 'required',
-            'password'     => 'required',
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
             'confirm_password'     => 'required',
         ]);
 
