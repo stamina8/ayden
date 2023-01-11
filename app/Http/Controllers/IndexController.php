@@ -56,7 +56,8 @@ class IndexController extends Controller
 
     public function registration()
     {
-        return view('registration'); // 注册
+//        return view('registration'); // 注册
+        return view('register');
     }
 
     public function register(Request $request)
