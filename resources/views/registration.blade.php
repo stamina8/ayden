@@ -51,7 +51,7 @@
             <div class="form-group row">
                 <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
                 <div class="col-md-6">
-                    <input type="text" id="name" class="form-control" name="name" value="{{old('name')}}"  autofocus>
+                    <input type="text" id="name" class="form-control @error('name') text-danger @enderror" name="name" value="{{old('name')}}"  autofocus>
                     @if ($errors->has('name'))
                         <span class="text-danger">{{ $errors->first('name') }}</span>
                     @endif
@@ -61,7 +61,7 @@
             <div class="form-group row">
                 <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
                 <div class="col-md-6">
-                    <input type="text" id="email_address" class="form-control input @error('email') is-danger @enderror" name="email" value="{{old('email')}}" autofocus>
+                    <input type="text" id="email_address" class="form-control  @error('email') text-danger @enderror" name="email" value="{{old('email')}}" autofocus>
                     @if ($errors->has('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
@@ -71,7 +71,7 @@
             <div class="form-group row">
                 <label for="email_address" class="col-md-4 col-form-label text-md-right">phone_number</label>
                 <div class="col-md-6">
-                    <input type="text" id="email_address" class="form-control" name="phone_number"  value="{{old('phone_number')}}" autofocus>
+                    <input type="text" id="email_address" class="form-control  @error('phone_number') text-danger @enderror" name="phone_number"  value="{{old('phone_number')}}" autofocus>
                     @if ($errors->has('phone_number'))
                         <span class="text-danger">{{ $errors->first('phone_number') }}</span>
                     @endif
@@ -83,7 +83,7 @@
             <div class="form-group row">
                 <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
                 <div class="col-md-6">
-                    <input type="password" id="password" class="form-control" name="password" value="{{old('password')}}" >
+                    <input type="password" id="password" class="form-control  @error('password') text-danger @enderror" name="password" value="{{old('password')}}" >
                     @if ($errors->has('password'))
                         <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
@@ -93,7 +93,7 @@
             <div class="form-group row">
                 <label for="password" class="col-md-4 col-form-label text-md-right">confirm_password</label>
                 <div class="col-md-6">
-                    <input type="password" id="password" class="form-control" name="confirm_password" value="{{old('confirm_password')}}">
+                    <input type="password" id="password" class="form-control  @error('confirm_password') text-danger @enderror" name="confirm_password" value="{{old('confirm_password')}}">
                     @if ($errors->has('confirm_password'))
                         <span class="text-danger">{{ $errors->first('confirm_password') }}</span>
                     @endif
