@@ -67,7 +67,7 @@ class IndexController extends Controller
             'phone_number' => 'required',
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|min:6',
+            'password' => 'required|min:6|confirmed',
             'confirm_password'     => 'required|confirmed',
         ]);
 
