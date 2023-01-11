@@ -66,7 +66,7 @@ class IndexController extends Controller
             'email'        => 'required|email|unique:users',
             'phone_number' => 'required',
             'password'     => 'required',
-            'confirm_password'     => 'required|confirmed',
+            'confirm_password'     => 'required',
         ]);
 
         $contact = User::create([

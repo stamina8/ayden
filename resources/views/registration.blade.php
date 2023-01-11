@@ -59,7 +59,7 @@
             <div class="form-group row">
                 <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
                 <div class="col-md-6">
-                    <input type="text" id="email_address" class="form-control" name="email" value="{{old('email')}}" autofocus>
+                    <input type="text" @error('name') id="email_address" class="form-control" name="email" value="{{old('email')}}" autofocus>
                     @if ($errors->has('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
